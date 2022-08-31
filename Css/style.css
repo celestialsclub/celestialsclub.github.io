@@ -75,7 +75,7 @@ ul{
     font-size: 1.2rem;
     color: var(--text-sec);
     margin-bottom: 2rem;
-    line-height: 1.7rem;
+    line-height: 1.6;
 }
 main{
     margin-top: 2rem;
@@ -301,7 +301,7 @@ footer{
     content: "";
     background-image: url('../images/brush.svg');
     background-repeat: no-repeat;
-    height: 0.8rem;
+    height: 0.5rem;
     width: 100%;
     position: absolute;
     left: 0;
@@ -379,7 +379,7 @@ footer{
 }
 .primary-btn{
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     background-color: var(--primary-clr);
     border-radius: 10px;
     position: relative;
@@ -406,8 +406,7 @@ footer{
     margin-top: 1rem;
 }
 .limited-width{
-    width: auto !important;
-    padding: 1rem 2.5rem;
+    width: fit-content;
 }
 .row-layout{
     border-bottom: 1px solid var(--mid-);
@@ -441,7 +440,42 @@ footer{
     align-items: flex-start;
     list-style: disc;
     padding: 0 1rem;
+    gap: 1rem;
 }
 .catalogue > li{
     color: var(--text-sec);
+}
+.prizes{
+    margin: 5rem 0;
+    gap: 2rem;
+}
+.prize-img{
+    width: 30%;
+}
+.prizes-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.theme{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 10rem 0;
+}
+.theme-img{
+    width: 50%;
+}
+.timeline-img{
+    margin: 5rem 0;
+}
+.sponsors-container{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.4rem;
+    background-color: var(--pale-dark);
+    border: 2px solid var(--mid-);
+    flex-wrap: wrap;
 }
