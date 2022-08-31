@@ -25,6 +25,7 @@
     font-family: 'Be Vietnam Pro', sans-serif;  
     color: var(--white);
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 body{
     background-color: var(--dark);
@@ -215,7 +216,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: var(--primary-clr);
-    height: 17rem;
+    height: 22rem;
     margin-left: -10rem;
     margin-top: 10rem;
     padding: 3rem 10rem;
@@ -478,4 +479,7 @@ footer{
     background-color: var(--pale-dark);
     border: 2px solid var(--mid-);
     flex-wrap: wrap;
+}
+a:hover{
+    cursor: pointer;
 }
