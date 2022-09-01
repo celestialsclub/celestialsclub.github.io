@@ -516,6 +516,7 @@ a:hover{
         margin: 1rem 0;
         background-color: var(--pale-dark);
         border-radius: 5px;
+        width: 100%;
     }
     ul > li > a{
         font-size: 1rem;
