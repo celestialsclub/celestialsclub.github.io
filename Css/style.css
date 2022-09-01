@@ -512,7 +512,7 @@ a:hover{
         width: 50%;
     }
     .nav-link{
-        padding: 1rem;
+        padding: 1rem 1.3rem;
         margin: 1rem 0;
         background-color: var(--pale-dark);
         border-radius: 5px;
