@@ -19,6 +19,9 @@
     background-color: var(--text-sec);
     border-radius: 1rem;
 }
+.mobile-only{
+    display: none;
+}
 *{
     margin: 0;
     padding: 0;
@@ -157,6 +160,7 @@ article{
     gap: 0.5rem;
     margin-top: 8rem;
     background-image: url("../images/hackathon.png");
+    background-repeat: no-repeat;
     margin-left: -10rem;
     width: 100vw;
     height: 20rem;
@@ -216,7 +220,6 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: var(--primary-clr);
-    height: 22rem;
     margin-left: -10rem;
     margin-top: 10rem;
     padding: 3rem 10rem;
@@ -482,4 +485,121 @@ footer{
 }
 a:hover{
     cursor: pointer;
+}
+
+/* let's write some code for responsiveness */
+@media only screen and (max-width: 1000px) {
+    .mobile-only{
+        display: flex;
+    }
+    .landing-img{
+        display: none;
+    }
+    body{
+        padding: 2rem !important;
+        padding-bottom: 0 !important;
+    }
+    nav{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    main{
+        margin-top: 4rem;
+    }
+    .logo, .footer-logo{
+        width: 70%;
+    }
+    .nav-link{
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: var(--pale-dark);
+        border-radius: 5px;
+    }
+    ul > li > a{
+        font-size: 1rem;
+    }
+    .content{
+        width: 100%;
+    }
+    .cta-btn{
+        font-size: 1.5rem;
+    }
+    .statement{
+        margin-bottom: 2rem;
+    }
+    .arrow{
+        width: 1.5rem;
+    }
+    article{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .info{
+        width: 100%;
+    }
+    .info-title{
+        font-size: 1.8rem;
+    }
+    .info-content{
+        font-size: 1rem;
+    }
+    .hackathon{
+        margin-left: -2rem;
+        height: auto;
+        padding: 2rem;
+    }
+    .center-text{
+        text-align: center;
+    }
+    .wide-content{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .features{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .features-content{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .info-content{
+        line-height: 1.6;
+    }
+    .features-title{
+        font-size: 1.2rem;
+    }
+    .objective-header{
+        width: 100%;
+    }
+    .features-icon{
+        width: 2rem;    
+    }
+    .objective-img{
+        display: none;
+    }
+    footer{
+        margin-left: -2rem;
+        padding: 2rem;
+    }
+    .footer-link{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lists{
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+    .list-item{
+        padding: 2rem;
+        border-radius: 5px;
+        background-color: var(--primary-clr);
+    }
+    .list-title{
+        font-weight: 500;
+        font-size: 1rem;
+    }
 }
