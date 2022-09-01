@@ -517,6 +517,7 @@ a:hover{
         background-color: var(--pale-dark);
         border-radius: 5px;
         width: 100%;
+        justify-content: space-between;
     }
     ul > li > a{
         font-size: 1rem;
